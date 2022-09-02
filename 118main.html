@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>118main.html</title>
+</head>
+<body>
+    <p>문서를 열면 팝업 창이 표시됩니다.</p>
+    <script>
+        popWin = window.open("119doit-event.html", "popup", "width=750, height=600");
+        popWin.opener = self;   //popWin객체를 만든 부모가 자신이라고 알려 줌.
+    </script>
+</body>
+</html>
